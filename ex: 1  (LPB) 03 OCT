@@ -1,0 +1,17 @@
+\\ Module principal
+DÉBUT
+    ECRIRE   " intruiduire une valeur entiere"
+
+    lire  V
+
+    SI V< 10 ALORS 
+        ECRIRE "v est plus petit qu"
+    SINON 
+        ECRIRE "v est plus grand que 10"
+        SI V % 10 = 0 ALORS
+            ECRIRE "v est un multiple de 10"
+        SINON
+            ECRIRE "v n'est pas un multiple de 10"
+        FINSI
+    FINSI
+FIN
