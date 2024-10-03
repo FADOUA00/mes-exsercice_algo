@@ -1,0 +1,33 @@
+ENCODER UN VALEUR ENTIERE 
+SI VALEUR EST > 0 ET < 5 AFFICHER ">0 et <5"
+SI VALEUR EGALE à 7 ou egale à 10 affficher "=7 ou =10"
+si valeur est miltiple de 20 ou egale à 30 et plus petite que 100 afficher "ok"
+dans tous les autres cas afficher " merci"
+///////////////////////////////////////////////////////////////////////////////////////
+
+CODE:
+
+\\ Module -principal
+DÉBUT
+    ECRIRE   " intruiduire une valeur entiere"
+
+    lire  V
+
+    SI V>0 ET V<5  ALORS 
+        ECRIRE ">0 ET <5"
+    SINON
+        SI V=7  OU V=10 alors 
+            ECRIRE "=7 OU =10"
+        SINON
+            SI (V%20=0 OU V =30) et V <100 ALORS 
+                ECRIRE "OK"
+            SINON
+                ECRIRE "MERCI" 
+            FINSI
+         FINSI
+    FINSI
+    
+FIN
+
+   
+
